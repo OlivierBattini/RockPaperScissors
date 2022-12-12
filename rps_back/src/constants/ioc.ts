@@ -1,0 +1,3 @@
+export enum Ioc {
+  DATABASE_PROVIDER = 'DATABASE_PROVIDER',
+}
