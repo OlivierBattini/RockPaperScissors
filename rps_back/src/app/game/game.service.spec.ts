@@ -14,15 +14,15 @@ describe('User score calculation', () => {
     expect(getUserResult(Hand.SCISSORS, Hand.PAPER)).toBe(GameResult.USER_WIN);
   });
 
-  it('be 0 when playing ROCK against ROCK', () => {
+  it('be GameResult.DRAW when playing ROCK against ROCK', () => {
     expect(getUserResult(Hand.ROCK, Hand.ROCK)).toBe(GameResult.DRAW);
   });
 
-  it('be 0 when playing SCISSORS against SCISSORS', () => {
+  it('be GameResult.DRAW when playing SCISSORS against SCISSORS', () => {
     expect(getUserResult(Hand.SCISSORS, Hand.SCISSORS)).toBe(GameResult.DRAW);
   });
 
-  it('be 0 when playing SCISSORS against SCISSORS', () => {
+  it('be GameResult.DRAW when playing SCISSORS against SCISSORS', () => {
     expect(getUserResult(Hand.SCISSORS, Hand.SCISSORS)).toBe(GameResult.DRAW);
   });
 
